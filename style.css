@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.container input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+label.box {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  display: inline-block;
+}
+
+input[type="radio"]:checked ~ label.box {
+  border: 2px solid royalblue;
+}
+
+.row {
+  display: flex;
+  margin: 4px;
+}
+
+.row div:first-child {
+  margin-right: 4px;
+}
+
+.recipe-list {
+  margin-top: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.apply-recipe {
+  padding: 16px;
+  background: royalblue;
+  color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.final-result {
+  text-align: center;
+}
